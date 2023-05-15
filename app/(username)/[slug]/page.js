@@ -69,13 +69,18 @@ export default function UserNameForm() {
             placeholder='username'
             value={formValue}
             onChange={onChange}
+            className='px-3 py-1 mr-2 my-1 rounded-md'
           />
           <UserNameMessage
             username={formValue}
             isValid={isValid}
             loading={loading}
           />
-          <button type='submit' className='bg-green p-2' disabled={!isValid}>
+          <button
+            type='submit'
+            className='bg-green-500 text-whhite px-3 py-1 rounded-md'
+            disabled={!isValid}
+          >
             Choose
           </button>
           <h3>Debug State</h3>
